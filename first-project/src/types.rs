@@ -2,7 +2,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Debug, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct Analasys {
+pub struct Analysis {
     pub age: Option<u32>,
     pub average_color: Option<u32>,
     pub histogram: Option<String>,

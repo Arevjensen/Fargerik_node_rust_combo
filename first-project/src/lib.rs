@@ -1,6 +1,6 @@
 use neon::prelude::*;
 use neon::types::buffer::TypedArray;
-use types::Analasys;
+use types::Analysis;
 extern crate neon_serde3;
 extern crate serde;
 
@@ -11,7 +11,7 @@ fn hello(mut cx: FunctionContext) -> JsResult<JsString> {
 }
 
 fn return_object(mut cx: FunctionContext) -> JsResult<JsValue> {
-    let y = Analasys {
+    let y = Analysis {
         age: Some(3),
         average_color: None,
         histogram: None,
